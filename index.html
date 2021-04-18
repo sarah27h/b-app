@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- preload webfonts  -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- google font -->
     <!-- build:replace '<link rel="preload" href="webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /build -->
+
+    <!-- preload webfonts  -->
+    <!-- build:replace '<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
+    <link
       rel="preload"
-      href="/webfonts/fa-solid-900.woff2?t=1618522344644"
+      href="/webfonts/fa-solid-900.woff2?t=1618787618277"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -16,15 +27,15 @@
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="js/all.min.js" as="script">' -->
-    <link rel="preload" href="js/all.js?t=1618522344644" as="script" />
+    <link rel="preload" href="js/all.js?t=1618787618277" as="script" />
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="css/mainStyle.min.css" as="style" />' -->
-    <link rel="preload" href="css/mainStyle.css?t=1618522344644" as="style" />
+    <link rel="preload" href="css/mainStyle.css?t=1618787618277" as="style" />
     <!-- /build -->
 
     <!-- build:replace '<link href="css/mainStyle.min.css" rel="stylesheet" />' -->
-    <link href="css/mainStyle.css?t=1618522344644" rel="stylesheet" />
+    <link href="css/mainStyle.css?t=1618787618277" rel="stylesheet" />
     <!-- /build -->
 
     <title>Start Project...</title>
@@ -80,8 +91,8 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <h1 class="hero__heading">Make Your Life Easier With B App</h1>
-            <p class="hero__text">
+            <h1 class="hero__heading heading--bold">Make Your Life Easier With B App</h1>
+            <p class="hero__text body-text--med">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illum unde optio
               ipsam fugit facilis itaque non nobis minima rerum, voluptatum accusantium laudantium
               nesciunt iusto quasi mollitia! Reprehenderit suscipit quae, quas dolorem ea laudantium
@@ -103,8 +114,114 @@
     </section>
     <!-- hero -->
 
+    <!-- about -->
+    <section class="about text-center">
+      <h2 class="about__heading heading--bold mb-5 text-uppercase">About App</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="about__content">
+              <i class="about__icon fas fa-cogs fa-3x mb-2"></i>
+              <h3 class="about__heading-sub heading--med mb-2">easy to customize</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex neque architecto,
+                eos eaque odit voluptas amet, adipisci dignissimos voluptates molestiae dolor. Eum
+                soluta quod quis tempore inventore amet sapiente?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about__content">
+              <i class="about__icon fas fa-bell fa-3x mb-2"></i>
+              <h3 class="about__heading-sub heading--med mb-2">built-in notification</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex neque architecto,
+                eos eaque odit voluptas amet, adipisci dignissimos voluptates molestiae dolor. Eum
+                soluta quod quis tempore inventore amet sapiente?
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about__content">
+              <i class="about__icon fas fa-power-off fa-3x mb-2"></i>
+              <h3 class="about__heading-sub heading--med mb-2">works offline</h3>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex neque architecto,
+                eos eaque odit voluptas amet, adipisci dignissimos voluptates molestiae dolor. Eum
+                soluta quod quis tempore inventore amet sapiente?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+
+    <!-- features -->
+    <section class="features text-center">
+      <h2 class="features__heading heading--bold mb-5 text-uppercase">features</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <div class="features__content">
+              <i class="features__icon fas fa-mobile-alt fa-5x mb-2"></i>
+              <h3 class="features__heading-sub heading--med mb-4">mobile Friendly</h3>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex neque architecto,
+                eos eaque odit voluptas amet, adipisci dignissimos voluptates molestiae dolor. Eum
+                soluta quod quis tempore inventore amet sapiente?Lorem ipsum dolor sit amet
+                consectetur.
+              </p>
+            </div>
+            <div class="features__content">
+              <i class="features__icon fas fa-lock fa-5x mb-2"></i>
+              <h3 class="features__heading-sub heading--med mb-4">security</h3>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex neque architecto,
+                eos eaque odit voluptas amet, adipisci dignissimos voluptates molestiae dolor. Eum
+                soluta quod quis tempore inventore amet sapiente?Lorem ipsum dolor sit amet
+                consectetur.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="features__img">
+              <img
+                src="images/features/feat_img.png"
+                alt="smart phone display b app login screen"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="features__content">
+              <i class="features__icon fas fas fa-headset fa-5x mb-2"></i>
+              <h3 class="features__heading-sub heading--med mb-4">24/7 support</h3>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex neque architecto,
+                eos eaque odit voluptas amet, adipisci dignissimos voluptates molestiae dolor. Eum
+                soluta quod quis tempore inventore amet sapiente?Lorem ipsum dolor sit amet
+                consectetur.
+              </p>
+            </div>
+            <div class="features__content">
+              <i class="features__icon fas fa-star fa-5x mb-2"></i>
+              <h3 class="features__heading-sub heading--med mb-4">beautiful design</h3>
+              <p class="features__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ex neque architecto,
+                eos eaque odit voluptas amet, adipisci dignissimos voluptates molestiae dolor. Eum
+                soluta quod quis tempore inventore amet sapiente?Lorem ipsum dolor sit amet
+                consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features -->
+
     <!-- build:replace '<script src="js/all.min.js" defer></script>' -->
-    <script src="js/all.js?t=1618522344644"></script>
+    <script src="js/all.js?t=1618787618277"></script>
     <!-- /build -->
   </body>
 </html>
