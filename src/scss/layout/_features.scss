@@ -1,18 +1,6 @@
-.about {
-  padding: 6rem 0 15rem;
-  position: relative;
-
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    height: 340px;
-    bottom: -261px;
-    background-color: $light-white;
-    -webkit-clip-path: polygon(0 37.84%, 99.9% 24.26%, 105% 0%, 0px 15%);
-    clip-path: polygon(0 37.84%, 99.9% 24.26%, 105% 0%, 0px 15%);
-  }
+.features {
+  padding: 12rem 0 10rem;
+  background-color: $light-white;
 
   &__heading {
     position: relative;
@@ -35,11 +23,8 @@
     }
   }
 
-  &__content {
-  }
-
   &__icon {
-    color: $primary-color;
+    color: $secondary-color;
   }
 
   &__heading-sub {
@@ -48,7 +33,7 @@
 
   &__text {
     line-height: 1.7rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: $dark-gray;
   }
 }

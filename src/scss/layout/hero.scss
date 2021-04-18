@@ -27,8 +27,8 @@
     height: 393px;
     bottom: -307px;
     background-color: #ffffff;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 55%, 0 100%);
-    clip-path: polygon(0 61%, 100% 52%, 105% 0%, 0 22%);
+    -webkit-clip-path: polygon(0 37.84%, 99.9% 24.26%, 105% 0%, 0px 15%);
+    clip-path: polygon(0 37.84%, 99.9% 24.26%, 105% 0%, 0px 15%);
   }
 
   &__heading {
@@ -44,8 +44,8 @@
   &__img {
     position: absolute;
     right: 0;
-    top: -39px;
-    z-index: 100;
+    bottom: -14px;
+    z-index: 1;
   }
 
   &__btns {

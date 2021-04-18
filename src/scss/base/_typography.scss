@@ -1,41 +1,28 @@
 // typography
 
-.heading-1 {
+.heading {
   font-family: $primary-font;
   color: $black;
 
   &--white {
     color: $white;
   }
-}
-
-.heading-2 {
-  font-family: $secondary-font;
-  color: $black;
-
-  &--white {
-    color: $white;
-  }
-
   &--light {
     font-weight: 400;
   }
 
   &--med {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   &--bold {
-    font-weight: 800;
-  }
-  &--white {
-    color: $white;
+    font-weight: 900;
   }
 }
 
 // other text
 .body-text {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   color: $light-gray;
 
   &--light {
@@ -43,11 +30,11 @@
   }
 
   &--med {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   &--bold {
-    font-weight: 800;
+    font-weight: 900;
   }
 
   &--black {
