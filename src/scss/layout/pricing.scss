@@ -1,0 +1,77 @@
+.pricing {
+  padding: 5rem;
+
+  &__heading {
+    position: relative;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 5%;
+      height: 3px;
+      background-color: #1c8aff;
+      bottom: -13px;
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+
+    &:hover::after {
+      width: 10%;
+      transition: all 0.6s ease-out;
+    }
+  }
+
+  .card {
+    box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.25);
+
+    &__title {
+      text-transform: uppercase;
+    }
+
+    &__header {
+      padding: 3rem 1rem;
+      position: relative;
+    }
+
+    &__text {
+      font-size: 1.56rem;
+      color: $light-gray;
+    }
+
+    &__body {
+      padding: 3rem 1rem;
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      color: #e20000;
+      top: 8px;
+      left: 8px;
+    }
+
+    &__btn {
+      margin-top: 2rem;
+    }
+
+    &__special {
+      background-image: linear-gradient(
+        to right,
+        rgba(0, 172, 217, 0.62),
+        rgba(226, 239, 232, 0.52)
+      );
+      color: #004996;
+      border: 0;
+    }
+  }
+}

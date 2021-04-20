@@ -5,6 +5,8 @@
   background-color: $light-gray;
   border-color: $dark-gray;
   font-family: $primary-font;
+  font-size: 1.4rem;
+  font-weight: 700;
   text-transform: uppercase;
   box-shadow: 0m.5rem 1rem rgba($black, 0.3);
   transition: all 0.2s;
@@ -12,7 +14,8 @@
   &:hover {
     cursor: pointer;
     transform: translate(-0.3rem);
-    background: $dark-gray;
+    background: $secondary-color;
+    color: $white;
   }
 
   &-main {
