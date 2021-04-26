@@ -1,5 +1,5 @@
 .pricing {
-  padding: 5rem;
+  padding: 5rem 1rem 16rem;
 
   &__heading {
     position: relative;
@@ -23,6 +23,7 @@
   }
 
   .card {
+    margin-bottom: 2rem;
     box-shadow: -1px 0px 12px 4px rgba(0, 0, 0, 0.25);
 
     &__title {
@@ -30,7 +31,7 @@
     }
 
     &__header {
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
       position: relative;
     }
 
