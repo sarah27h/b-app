@@ -19,7 +19,7 @@
     <!-- build:replace '<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
     <link
       rel="preload"
-      href="/webfonts/fa-solid-900.woff2?t=1618960004162"
+      href="/webfonts/fa-solid-900.woff2?t=1619221096289"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -27,15 +27,15 @@
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="js/all.min.js" as="script">' -->
-    <link rel="preload" href="js/all.js?t=1618960004162" as="script" />
+    <link rel="preload" href="js/all.js?t=1619221096289" as="script" />
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="css/mainStyle.min.css" as="style" />' -->
-    <link rel="preload" href="css/mainStyle.css?t=1618960004162" as="style" />
+    <link rel="preload" href="css/mainStyle.css?t=1619221096289" as="style" />
     <!-- /build -->
 
     <!-- build:replace '<link href="css/mainStyle.min.css" rel="stylesheet" />' -->
-    <link href="css/mainStyle.css?t=1618960004162" rel="stylesheet" />
+    <link href="css/mainStyle.css?t=1619221096289" rel="stylesheet" />
     <!-- /build -->
 
     <title>Start Project...</title>
@@ -90,7 +90,7 @@
     <section class="hero">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-6">
             <h1 class="hero__heading heading--bold">Make Your Life Easier With B App</h1>
             <p class="hero__text body-text--med">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur illum unde optio
@@ -104,8 +104,8 @@
               <a href="#" type="button" class="hero__btn btn btn-light">Try Now</a>
             </div>
           </div>
-          <div class="col-6">
-            <div class="hero__img">
+          <div class="col-md-6">
+            <div class="hero__img d-none d-sm-block">
               <img src="images/hero/hero_img.png" class="img-fluid" alt="smart phone" />
             </div>
           </div>
@@ -309,8 +309,116 @@
     </section>
     <!-- pricing -->
 
+    <!-- contact -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact__heading heading--bold mb-5 text-center text-uppercase">get in touch</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="contact__form">
+              <form>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your name"
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your address"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group mt-4">
+                  <textarea
+                    class="form-control form-control-lg"
+                    rows="10"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg justify-self-center">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact__details">
+              <h3 class="contact__heading-sub heading--med">Address</h3>
+              <p class="contact__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aliquam sit, nihil
+                saepe velit temporibus maiores nemo vel ab veritatis facilis autem soluta quaerat
+                est officia ipsum deleniti voluptate natus.
+              </p>
+              <ul class="contact__list fa-ul">
+                <li>
+                  <span class="fa-li"><i class="contact__icon fas fa-mobile-alt"></i></span> +1 444
+                  444 222
+                </li>
+                <li>
+                  <span class="fa-li"><i class="contact__icon fas fa-map-marker-alt"></i></span> 123
+                  Private 858 Rd
+                </li>
+                <li>
+                  <span class="fa-li"><i class="contact__icon fas fa-paper-plane"></i></span>
+                  bapp@ourcomany.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row flex-column align-items-center">
+          <a class="navbar-brand footer__logo" href="#">B App</a>
+          <nav class="footer__social">
+            <ul class="footer__social-items d-flex flex-row justify-content-around body-text--med">
+              <li class="footer__social-links">
+                <a target="_blank" href="https://www.twitter.com" class="footer__social-link">
+                  <i class="fab fa-twitter-square fa-3x"></i
+                  ><span class="sr-only">Visit our twitter account</span>
+                </a>
+              </li>
+              <li class="footer__social-links">
+                <a target="_blank" href="https://www.facebook.com" class="footer__social-link">
+                  <i class="fab fa-facebook-square fa-3x"></i
+                  ><span class="sr-only">Visit our facebook page</span>
+                </a>
+              </li>
+              <li class="footer__social-links">
+                <a target="_blank" href="https://www.youtube.com" class="footer__social-link">
+                  <i class="fab fa-youtube-square fa-3x"></i
+                  ><span class="sr-only">Visit our youtube channel</span>
+                </a>
+              </li>
+              <li class="footer__social-links">
+                <a target="_blank" href="https://www.linkedin.com" class="footer__social-link">
+                  <i class="fab fa-linkedin fa-3x"></i
+                  ><span class="sr-only">Visit our linkedin</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#attributes.html" class="footer__attributes">Attributes</a>
+
+          <p class="footer__copyright">Copyright © <span id="update_year"></span> B App</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
     <!-- build:replace '<script src="js/all.min.js" defer></script>' -->
-    <script src="js/all.js?t=1618960004162"></script>
+    <script src="js/all.js?t=1619221096289"></script>
     <!-- /build -->
   </body>
 </html>
