@@ -1,1 +1,2 @@
 import './bootstrapStart';
+import './copyrightDate';
