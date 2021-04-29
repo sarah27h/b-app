@@ -5,9 +5,46 @@
     color: $white;
   }
 
+  &__toggler {
+    color: $secondary-color;
+  }
+
+  &__toggler-icon {
+    vertical-align: baseline;
+  }
+
+  &__collapse {
+    @include media-breakpoint-down(md) {
+      background-color: $light-white;
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+  }
+
+  &__navbar.active {
+    background: rgba($primary-color, 0.7);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__nav-link.navbarScroll {
+    color: $white;
+    @include media-breakpoint-down(md) {
+      color: $dark-gray;
+    }
+  }
   &__nav-link {
     margin-left: 1.5rem;
     color: $dark-gray;
     font-size: 1.5rem;
+    &:hover,
+    &:focus {
+      color: $secondary-color;
+    }
+
+    @include media-breakpoint-down(md) {
+      color: $dark-gray;
+      font-size: 2rem;
+      font-weight: 800;
+    }
   }
 }
