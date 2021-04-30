@@ -26,12 +26,12 @@ window.onscroll = function () {
   // document.documentElement.scrollTop for Chrome
 
   if (document.documentElement.scrollTop || document.body.scrollTop > 10) {
-    headerNavbar.classList.add('active');
+    headerNavbar.classList.add('scroll-js');
     Array.prototype.forEach.call(headerNavbarLinks, function (navbarLink) {
       navbarLink.classList.add('navbarScroll');
     });
   } else {
-    headerNavbar.classList.remove('active');
+    headerNavbar.classList.remove('scroll-js');
     Array.prototype.forEach.call(headerNavbarLinks, function (navbarLink) {
       navbarLink.classList.remove('navbarScroll');
     });
