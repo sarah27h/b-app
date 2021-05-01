@@ -16,10 +16,21 @@
     <!-- /build -->
 
     <!-- preload webfonts  -->
-    <!-- build:replace '<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
+    <!-- build:replace '<link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
     <link
       rel="preload"
-      href="/webfonts/fa-solid-900.woff2?t=1619824491166"
+      href="/webfonts/fa-solid-900.woff2?t=1619906830587"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <!-- /build -->
+
+    <!-- preload webfonts  -->
+    <!-- build:replace '<link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
+    <link
+      rel="preload" 	
+      href="/webfonts/fa-brands-400.woff2?t=1619906830587"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -27,15 +38,15 @@
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="js/all.min.js" as="script">' -->
-    <link rel="preload" href="js/all.js?t=1619824491166" as="script" />
+    <link rel="preload" href="js/all.js?t=1619906830587" as="script" />
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="css/mainStyle.min.css" as="style" />' -->
-    <link rel="preload" href="css/mainStyle.css?t=1619824491166" as="style" />
+    <link rel="preload" href="css/mainStyle.css?t=1619906830587" as="style" />
     <!-- /build -->
 
     <!-- build:replace '<link href="css/mainStyle.min.css" rel="stylesheet" />' -->
-    <link href="css/mainStyle.css?t=1619824491166" rel="stylesheet" />
+    <link href="css/mainStyle.css?t=1619906830587" rel="stylesheet" />
     <!-- /build -->
 
     <title>Start Project...</title>
@@ -113,7 +124,12 @@
           </div>
           <div class="col-md-6">
             <div class="hero__img d-none d-md-block">
-              <img src="images/hero/hero_img.png" class="img-fluid" alt="smart phone" />
+              <picture>
+                <source type="image/webp" srcset="images/hero/hero_img.webp" />
+                <source type="image/png" srcset="images/hero/hero_img.png" />
+                <img src="images/hero/hero_img.png" class="img-fluid" alt="smart phone" width="222"
+                height="407" loading="lazy" />
+              </picture>
             </div>
           </div>
         </div>
@@ -193,11 +209,25 @@
           </div>
           <div class="col-md-4">
             <div class="features__img">
-              <img
-                src="images/features/feat_img.png"
-                alt="smart phone display b app login screen"
-                class="img-fluid"
-              />
+              <picture>
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/features/feat_img-150.webp"
+                  type="image/webp"
+                />
+                <source media="(min-width: 801px)" srcset="images/features/feat_img.webp" />
+      
+                <source media="(max-width: 800px)" srcset="images/features/feat_img-150.webp" />
+                <img
+                width="222"
+                height="407" 
+                  src="images/features/feat_img-150.png"
+                  class="img-fluid" 
+                  loading="lazy"
+                  alt="smart phone display b app login screen"
+                />
+              </picture>
+              
             </div>
           </div>
           <div class="col-md-4">
@@ -425,7 +455,7 @@
     <!-- footer -->
 
     <!-- build:replace '<script src="js/all.min.js" defer></script>' -->
-    <script src="js/all.js?t=1619824491166"></script>
+    <script src="js/all.js?t=1619906830587"></script>
     <!-- /build -->
 
     <div class="modal attribute-modal" tabindex="-1" id="attributesModal">

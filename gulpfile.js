@@ -324,7 +324,7 @@ function serveTask() {
 function deploy(done) {
   return surge({
     project: './dist/', // Path to your static build directory
-    domain: 'https://yoursite.surge.sh', // Your domain or Surge subdomain
+    domain: 'https://bapp.surge.sh', // Your domain or Surge subdomain
   });
   done();
 }
@@ -374,12 +374,13 @@ exports.default = series(
 exports.build = series(
   cleanDistForBuild,
   optimizeImages,
-  // parallel(
-  //   resizeImages('features', 250),
-  //   resizeImages('features', 350),
-  //   resizeImages('hero', 800),
-  //   resizeImages('hero', 1600)
-  // ),
+  parallel(
+    resizeImages('features', 150),
+    resizeImages('hero', 800),
+    resizeImages('hero', 1600),
+    resizeImages('download', 800),
+    resizeImages('download', 1600)
+  ),
   parallel(
     scssTask,
     jsTask,
@@ -390,6 +391,6 @@ exports.build = series(
     copyImagesTask,
     copyfontawesomeWebfontsTask
   ),
-  convertToWebp
-  // deploy
+  convertToWebp,
+  deploy
 );

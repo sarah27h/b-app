@@ -1,11 +1,20 @@
 .download {
   padding: 12rem 1rem 10rem;
   background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
-    url('../../images/dowload/using-mobile-phone.jpg');
+    url('../../images/download/using-mobile-phone-800.jpg');
+  background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
+    url('../../images/download/using-mobile-phone-800.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
   position: relative;
+
+  @include media-breakpoint-up(xl) {
+    background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
+      url('../../images/download/using-mobile-phone-1600.jpg');
+    background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
+      url('../../images/download/using-mobile-phone-1600.webp');
+  }
 
   // &::after {
   //   content: '';

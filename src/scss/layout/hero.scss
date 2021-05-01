@@ -1,12 +1,21 @@
 .hero {
   padding-bottom: 6rem;
   background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
-    url('../../images/hero/hero_bg.jpg');
+    url('../../images/hero/hero_bg-800.jpg');
+  background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
+    url('../../images/hero/hero_bg-800.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
   padding-top: 9rem;
   position: relative;
+
+  @include media-breakpoint-up(xl) {
+    background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
+      url('../../images/hero/hero_bg-1600.jpg');
+    background-image: linear-gradient(to right, rgba(0, 172, 217, 0.62), rgba(226, 239, 232, 0.52)),
+      url('../../images/hero/hero_bg-1600.webp');
+  }
 
   // &::after {
   //   content: '';
