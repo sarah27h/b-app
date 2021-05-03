@@ -36,9 +36,19 @@
     margin-left: 1.5rem;
     color: $dark-gray;
     font-size: 1.5rem;
-    &:hover,
+
     &:focus {
       color: $secondary-color;
+    }
+
+    // to solve issue of 2 links are active
+    // due to clicking a link then scrolling up or down
+    // hover effect in medium, small screens
+    // to prevent hover effect to apply for medium, small screens
+    @include media-breakpoint-up(xl) {
+      &:hover {
+        color: $secondary-color;
+      }
     }
 
     @include media-breakpoint-down(md) {
