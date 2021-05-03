@@ -19,7 +19,7 @@
     <!-- build:replace '<link rel="preload" href="/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
     <link
       rel="preload"
-      href="/webfonts/fa-solid-900.woff2?t=1619910270334"
+      href="/webfonts/fa-solid-900.woff2?t=1620077691825"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -29,8 +29,8 @@
     <!-- preload webfonts  -->
     <!-- build:replace '<link rel="preload" href="/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>' -->
     <link
-      rel="preload" 	
-      href="/webfonts/fa-brands-400.woff2?t=1619910270334"
+      rel="preload"
+      href="/webfonts/fa-brands-400.woff2?t=1620077691825"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -38,15 +38,15 @@
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="js/all.min.js" as="script">' -->
-    <link rel="preload" href="js/all.js?t=1619910270334" as="script" />
+    <link rel="preload" href="js/all.js?t=1620077691825" as="script" />
     <!-- /build -->
 
     <!-- build:replace '<link rel="preload" href="css/mainStyle.min.css" as="style" />' -->
-    <link rel="preload" href="css/mainStyle.css?t=1619910270334" as="style" />
+    <link rel="preload" href="css/mainStyle.css?t=1620077691825" as="style" />
     <!-- /build -->
 
     <!-- build:replace '<link href="css/mainStyle.min.css" rel="stylesheet" />' -->
-    <link href="css/mainStyle.css?t=1619910270334" rel="stylesheet" />
+    <link href="css/mainStyle.css?t=1620077691825" rel="stylesheet" />
     <!-- /build -->
 
     <title>Start Project...</title>
@@ -54,14 +54,14 @@
   <body data-spy="scroll" data-target="#navbar-spy" data-offset="20">
     <!-- header -->
     <section class="header">
-      <nav id="navbar-spy" class="navbar navbar-expand-lg fixed-top header__navbar">
+      <nav class="navbar navbar-expand-lg fixed-top header__navbar">
         <div class="container">
           <a class="navbar-brand header__logo" href="#">B App</a>
           <button
+            data-target="#navbar-spy"
             class="navbar-toggler header__toggler"
             type="button"
             data-toggle="collapse"
-            data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -72,7 +72,7 @@
           </button>
           <div
             class="collapse navbar-collapse header__collapse justify-content-end"
-            id="navbarNavDropdown"
+            id="navbar-spy"
           >
             <ul class="navbar-nav hearder__nav" role="tablist">
               <li class="nav-item header__nav-item">
@@ -101,11 +101,9 @@
       </nav>
     </section>
     <!-- header -->
-<div  data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-
 
     <!-- hero -->
-    <section class="hero  text-center text-md-left" id="home">
+    <section class="hero text-center text-md-left" id="home">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -127,8 +125,14 @@
               <picture>
                 <source type="image/webp" srcset="images/hero/hero_img.webp" />
                 <source type="image/png" srcset="images/hero/hero_img.png" />
-                <img src="images/hero/hero_img.png" class="img-fluid" alt="smart phone" width="222"
-                height="407" loading="lazy" />
+                <img
+                  src="images/hero/hero_img.png"
+                  class="img-fluid"
+                  alt="smart phone"
+                  width="222"
+                  height="407"
+                  loading="lazy"
+                />
               </picture>
             </div>
           </div>
@@ -216,18 +220,17 @@
                   type="image/webp"
                 />
                 <source media="(min-width: 801px)" srcset="images/features/feat_img.webp" />
-      
+
                 <source media="(max-width: 800px)" srcset="images/features/feat_img-150.webp" />
                 <img
-                width="222"
-                height="407" 
+                  width="222"
+                  height="407"
                   src="images/features/feat_img-150.png"
-                  class="img-fluid" 
+                  class="img-fluid"
                   loading="lazy"
                   alt="smart phone display b app login screen"
                 />
               </picture>
-              
             </div>
           </div>
           <div class="col-md-4">
@@ -455,7 +458,7 @@
     <!-- footer -->
 
     <!-- build:replace '<script src="js/all.min.js" defer></script>' -->
-    <script src="js/all.js?t=1619910270334"></script>
+    <script src="js/all.js?t=1620077691825"></script>
     <!-- /build -->
 
     <div class="modal attribute-modal" tabindex="-1" id="attributesModal">
@@ -468,12 +471,31 @@
             </button>
           </div>
           <div class="modal-body">
-            <p><a href='https://www.freepik.com/psd/mockup'>Mockup psd created by mockup-plus.com - www.freepik.com</a></p>
-            <p><a href='https://www.freepik.com/vectors/banner'>Banner vector created by starline - www.freepik.com</a></p>
-            <p><a href='https://www.freepik.com/psd/background'>Background psd created by rawpixel.com - www.freepik.com</a></p>
-            <p><a href='https://www.freepik.com/psd/mockup'>Mockup psd created by freepik - www.freepik.com</a></p>
-            <p><a href='https://www.freepik.com/photos/background'>Background photo created by jannoon028 - www.freepik.com</a></p>
-
+            <p>
+              <a href="https://www.freepik.com/psd/mockup"
+                >Mockup psd created by mockup-plus.com - www.freepik.com</a
+              >
+            </p>
+            <p>
+              <a href="https://www.freepik.com/vectors/banner"
+                >Banner vector created by starline - www.freepik.com</a
+              >
+            </p>
+            <p>
+              <a href="https://www.freepik.com/psd/background"
+                >Background psd created by rawpixel.com - www.freepik.com</a
+              >
+            </p>
+            <p>
+              <a href="https://www.freepik.com/psd/mockup"
+                >Mockup psd created by freepik - www.freepik.com</a
+              >
+            </p>
+            <p>
+              <a href="https://www.freepik.com/photos/background"
+                >Background photo created by jannoon028 - www.freepik.com</a
+              >
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
