@@ -37,6 +37,12 @@
     color: $dark-gray;
     font-size: 1.5rem;
 
+    // to solve issuse of hover default of bootstrap
+    // give it color of normal link
+    &:hover {
+      color: $dark-gray;
+    }
+
     &:focus {
       color: $secondary-color;
     }
