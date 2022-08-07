@@ -8,7 +8,7 @@
 //   });
 // });
 
-const headerNavbar = document.querySelector('.header__navbar');
+const headerNavbar = document.querySelector('.headers');
 const headerNavbarLinks = document.querySelectorAll('.header__nav-link');
 console.log(headerNavbar);
 
